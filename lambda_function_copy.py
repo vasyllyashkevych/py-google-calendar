@@ -73,8 +73,8 @@ def lambda_handler(event, context):
     new_start = event['currentIntent']['slots']['PickupTime']
 
     start_hours, start_mins = new_start.split(":")
-    new_end = str(int(start_hours)+1) + ":" + start_mins
-    print(77, new_end)
+
+    new_end = str(int(start_hours)+1) + start_mins
 
     # get name of day
     # new_day_name = get_day_name(new_day)
@@ -92,18 +92,16 @@ def lambda_handler(event, context):
     if not calendar.is_working_day(date(int(day_year), int(day_month), int(day_day))):
         print(new_day_name + ' is not a working day, please, choose another day !')
         return {
-            'userId': event['userId'],
-            'bot': event['bot'],
-            'body': 'It is not a working day, please, choose another day!'
+            'statusCode': 200,
+            'body': json.dumps('It is not a working day, please, choose another day !')
         }
 
     # check if time is correct
     if dt_start_time[0] < info['working_start'] or dt_end_time[0] > info['working_end']:
         print('Working hours are incorrect !')
         return {
-            'userId': event['userId'],
-            'bot': event['bot'],
-            'message': 'Working hours are incorrect ! Please, choose amidst working hours'
+            'statusCode': 200,
+            'body': json.dumps('Working hours are incorrect !')
         }
 
     # parse list of events
@@ -114,18 +112,24 @@ def lambda_handler(event, context):
     if check_timeslot(dt_start_time, dt_end_time, events):
         print('Busy')
         return {
-            'userId': event['userId'],
-            'bot': event['bot'],
-            'message': 'The timeslot is not empty! Please, check another one'
+            'statusCode': 200,
+            'body': json.dumps('Busy')
         }
     else:
         info['event'] = ''.join(choice(ascii_uppercase) for i in range(12))
-        d_start = new_day + "T" + new_start + ":00"
-        d_end = new_day + "T" + new_end + ":00"
-        ce(info, d_start, d_end)
+        ce(info, new_start, new_end)
         return {
-            'userId': event['userId'],
-            'bot': event['bot'],
-            'message': 'The appointment is scheduled under id: '+ info['event']
+            'statusCode': 200,
+            'body': json.dumps('The appointment is scheduled!'),
+            'event_id': info['event']
         }
 
+#
+# # TEST
+# d = datetime.now().date()
+# tomorrow = datetime(d.year, d.month, d.day, 19) + timedelta(days=2)
+#
+# start = tomorrow.isoformat()
+# end = (tomorrow + timedelta(hours=1)).isoformat()
+#
+# lambda_handler({'start': start, 'end': end, 'event': "Birthday"})
