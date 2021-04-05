@@ -1,0 +1,14 @@
+skyfield_data-3.0.0.dist-info/COPYING,sha256=sj9yG-adFMnwSGGP0-tbKrY1qBIyERCAhLWtkpSxVxk,1069
+skyfield_data-3.0.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+skyfield_data-3.0.0.dist-info/METADATA,sha256=TX90_jNyArltxLRcewbVrO4tsME5zSmE2hCLjCGzjjk,8297
+skyfield_data-3.0.0.dist-info/RECORD,,
+skyfield_data-3.0.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+skyfield_data-3.0.0.dist-info/top_level.txt,sha256=dLLsdMhP3dBnR2xZo--pCB3MAFC0kfOXCTLXOxmABwY,14
+skyfield_data/__init__.py,sha256=XWqNF9hZqANZdgRI3bVFkgv98ZL6MXqtUqplBtlnOBg,755
+skyfield_data/__pycache__/__init__.cpython-36.pyc,,
+skyfield_data/__pycache__/expiration_data.cpython-36.pyc,,
+skyfield_data/__pycache__/expirations.cpython-36.pyc,,
+skyfield_data/data/de421.bsp,sha256=ogpxOdoEy8RiRUY0kY6anKaRJwROLMnU-cFuI40t7tw,16788480
+skyfield_data/data/finals2000A.all,sha256=Jp_rm7Qoy3TQa0Aofu5U_1YaVb3iS_8aqUWBRMcG6Qo,3372720
+skyfield_data/expiration_data.py,sha256=yLLbD0th_XuvvyWBMT4TSnVSr4tRqMFsV8ogODZPkLY,120
+skyfield_data/expirations.py,sha256=Ru8UpgNmWgjkSfmMePsQ63jNIYyc_319ZYXKbpvwAJg,1729

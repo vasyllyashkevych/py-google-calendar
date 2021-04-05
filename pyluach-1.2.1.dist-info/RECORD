@@ -1,0 +1,16 @@
+pyluach-1.2.1.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+pyluach-1.2.1.dist-info/METADATA,sha256=pKRZ2IVm_l7HN-EgnAzGLeYVlDOC_dxGNnXuNrxxNbU,2876
+pyluach-1.2.1.dist-info/RECORD,,
+pyluach-1.2.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyluach-1.2.1.dist-info/license.txt,sha256=DWp8V21opjT585WKMOu9V_afsL9TEUE38euJCBU1NjU,1145
+pyluach-1.2.1.dist-info/top_level.txt,sha256=qDTB5xoNZvj4Q2mDted17xIYhIUDnVW923AowoN-ES4,8
+pyluach/__init__.py,sha256=RU4qmDBkuHY2CbDnRq41_gzro2C-GDM6YAxwTErsFPY,106
+pyluach/__pycache__/__init__.cpython-36.pyc,,
+pyluach/__pycache__/dates.cpython-36.pyc,,
+pyluach/__pycache__/hebrewcal.cpython-36.pyc,,
+pyluach/__pycache__/parshios.cpython-36.pyc,,
+pyluach/__pycache__/utils.cpython-36.pyc,,
+pyluach/dates.py,sha256=UYCA2hRxYTONed5BQszz6t0-SsiSbl2PVCuKyP9e0CY,22121
+pyluach/hebrewcal.py,sha256=9bmgvAjxLz6kvsntm9HZbgJ-5Fnez5zxf_gqXOXUlbE,15472
+pyluach/parshios.py,sha256=R30-m15SuhNh8cH6o9nF1JrS0Euc0c8FMRS1PH-b5xQ,6345
+pyluach/utils.py,sha256=JGsGbsqT8GQsK1a4jD45UI469VcpZ63jNoOFCmhzSgk,1565
